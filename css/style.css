@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
 /* ---------------------------
-        Universal Codded
+    Universal Code Start
 ---------------------------- */
 
 *,
@@ -15,7 +15,11 @@
 }
 
 /* ---------------------------
-        Default Codded
+    Universal Code End
+---------------------------- */
+
+/* ---------------------------
+    Default Codded Start
 ---------------------------- */
 
 .float_right {
@@ -26,20 +30,44 @@
     float: left;
 }
 
-.dark_black {
-    color: #828282;
-}
-
 html,
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#container{
+.common_color {
+    background: linear-gradient(to right, #FB954B, #FD4D2F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark_black {
+    color: #828282;
+}
+
+#container {
     margin: 0 4em;
 }
+
 /* ---------------------------
-        Top Section Area
+    Default Codded End
+---------------------------- */
+
+/* ---------------------------
+    Hover Effect Code Start
+---------------------------- */
+
+.grid_box a:hover {
+    background: linear-gradient(to left, #FB954B, #FD4D2F);
+    transition: .3s ease-in-out;
+}
+
+/* ---------------------------
+    Hover Effect Code End
+---------------------------- */
+
+/* ---------------------------
+        Top Section Start
 ---------------------------- */
 
 .top_section {
@@ -63,18 +91,25 @@ body {
     line-height: 1.5em;
 }
 
-.common_color {
-    background: linear-gradient(to right, #FB954B, #FD4D2F);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .grid_box a {
     background: linear-gradient(to right, #FB954B, #FD4D2F);
     padding: 1em 2em;
     border-radius: 100px;
     color: #fff;
     font-size: 1.125em;
+    position: relative;
+}
+.grid_box a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(10px);
+    border-radius: 100px;
+    background: linear-gradient(to right, #FB954B, #FD4D2F);
 }
 
 .top_section .grid_box img {
@@ -89,26 +124,28 @@ body {
     About Section Start
 ---------------------------- */
 
-.about_area{
+.about_area {
     background: url(../images/shapes/7.png) no-repeat;
     background-size: cover;
     margin: 5em auto;
 }
 
-.about_area .grid_box img{
+.about_area .grid_box img {
     display: block;
     max-width: 300px;
     margin: 3em auto 0;
 }
 
-.about_text h1{
+.about_text h1 {
     font-size: 2.5em;
 }
-.about_text p{
-    font-family: 'Manrope',sans-serif;
+
+.about_text p {
+    font-family: 'Manrope', sans-serif;
     margin: 3em auto;
     font-size: 1.125em;
 }
+
 /* ---------------------------
     About Section End
 ---------------------------- */
@@ -116,42 +153,97 @@ body {
 /* ---------------------------
     Recipies Section Start
 ---------------------------- */
-.child_recipies{
+.child_recipies {
     text-align: center;
     margin: 0 auto;
     width: 52%;
 }
-.recipies_area h1{
+
+.recipies_area h1 {
     font-size: 2.25em;
 }
-.child_recipies h1 + p{
+
+.child_recipies h1+p {
     color: #252525;
     margin: 1em auto 3em;
     font-size: 1.125em;
 }
 
-.recipies_list_box{
+.recipies_list_box {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.25em;
 }
-.recipies_list{
+
+.recipies_list {
     padding: 1.25em;
     box-shadow: 0px 4px 40px 0px #00000040;
     border-radius: 20px;
     text-align: center;
 }
-.recipies_list h2{
+
+.recipies_list h2 {
     font-size: 1.75em;
 }
-.recipies_list p{
+
+.recipies_list p {
     margin: 1.2em auto;
     font-size: 1.125em;
     line-height: 1.5em;
 }
-.recipies_list img{
+
+.recipies_list img {
     margin: 1em auto;
 }
+
 /* ---------------------------
     Recipies Section End
+---------------------------- */
+
+/* ---------------------------
+    Rating Section Start
+---------------------------- */
+.rating_box {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 0 40px #00000040;
+    margin: 5em auto;
+    border-radius: 15px;
+}
+
+.rating_content {
+    text-align: center;
+    padding: 3em 0;
+}
+
+.rating_content h1 {
+    font-size: 3em;
+}
+
+/* ---------------------------
+    Rating Section End
+---------------------------- */
+
+/* ---------------------------
+    Footer Area Start
+---------------------------- */
+.footer_area {
+    color: #fff;
+    background: #000;
+    padding: 2.5em;
+    text-align: center;
+}
+
+.footer_area h1 {
+    font-family: 'Manrope', sans-serif;
+    color: #5b5b5b;
+    font-size: 1.875em;
+}
+
+.footer_area p {
+    margin: 2em auto;
+}
+
+/* ---------------------------
+    Footer Area Start
 ---------------------------- */
