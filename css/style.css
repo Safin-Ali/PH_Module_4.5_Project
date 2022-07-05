@@ -36,7 +36,7 @@ body {
 }
 
 #container{
-    margin: 0 1.7em;
+    margin: 0 4em;
 }
 /* ---------------------------
         Top Section Area
@@ -65,7 +65,7 @@ body {
 
 .common_color {
     background: linear-gradient(to right, #FB954B, #FD4D2F);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -86,7 +86,7 @@ body {
 ---------------------------- */
 
 /* ---------------------------
-        About Section Start
+    About Section Start
 ---------------------------- */
 
 .about_area{
@@ -109,19 +109,49 @@ body {
     margin: 3em auto;
     font-size: 1.125em;
 }
-.recipies_area{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
+/* ---------------------------
+    About Section End
+---------------------------- */
+
+/* ---------------------------
+    Recipies Section Start
+---------------------------- */
 .child_recipies{
+    text-align: center;
+    margin: 0 auto;
     width: 52%;
 }
 .recipies_area h1{
     font-size: 2.25em;
 }
-.recipies_area p{
+.child_recipies h1 + p{
     color: #252525;
-    margin-top: 1em;
+    margin: 1em auto 3em;
     font-size: 1.125em;
 }
+
+.recipies_list_box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.25em;
+}
+.recipies_list{
+    padding: 1.25em;
+    box-shadow: 0px 4px 40px 0px #00000040;
+    border-radius: 20px;
+    text-align: center;
+}
+.recipies_list h2{
+    font-size: 1.75em;
+}
+.recipies_list p{
+    margin: 1.2em auto;
+    font-size: 1.125em;
+    line-height: 1.5em;
+}
+.recipies_list img{
+    margin: 1em auto;
+}
+/* ---------------------------
+    Recipies Section End
+---------------------------- */
