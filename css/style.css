@@ -32,32 +32,34 @@
 
 html,
 body {
-    margin: 3em 1.7em;
     font-family: 'Montserrat', sans-serif;
 }
 
-
+#container{
+    margin: 0 1.7em;
+}
 /* ---------------------------
         Top Section Area
 ---------------------------- */
 
-.top_section {}
+.top_section {
+    margin: 5em auto;
+}
 
 .grid_box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    max-width: 100%;
 }
 
 .grid_box h1 {
-    font-size: 3em;
+    font-size: 3.75em;
     line-height: 1.5em;
 }
 
 .grid_box p {
     margin: 1.5em auto;
-    font-size: 1.5em;
+    font-size: 1.25em;
     line-height: 1.5em;
 }
 
@@ -72,6 +74,7 @@ body {
     padding: 1em 2em;
     border-radius: 100px;
     color: #fff;
+    font-size: 1.125em;
 }
 
 .top_section .grid_box img {
@@ -81,3 +84,44 @@ body {
 /* ---------------------------
         Top Section End
 ---------------------------- */
+
+/* ---------------------------
+        About Section Start
+---------------------------- */
+
+.about_area{
+    background: url(../images/shapes/7.png) no-repeat;
+    background-size: cover;
+    margin: 5em auto;
+}
+
+.about_area .grid_box img{
+    display: block;
+    max-width: 300px;
+    margin: 3em auto 0;
+}
+
+.about_text h1{
+    font-size: 2.5em;
+}
+.about_text p{
+    font-family: 'Manrope',sans-serif;
+    margin: 3em auto;
+    font-size: 1.125em;
+}
+.recipies_area{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.child_recipies{
+    width: 52%;
+}
+.recipies_area h1{
+    font-size: 2.25em;
+}
+.recipies_area p{
+    color: #252525;
+    margin-top: 1em;
+    font-size: 1.125em;
+}
