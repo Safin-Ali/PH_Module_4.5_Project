@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+/* ---------------------------
+        Universal Codded
+---------------------------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------
+        Default Codded
+---------------------------- */
+
+.float_right {
+    float: right;
+}
+
+.float_left {
+    float: left;
+}
+
+.dark_black {
+    color: #828282;
+}
+
+html,
+body {
+    margin: 3em 1.7em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ---------------------------
+        Top Section Area
+---------------------------- */
+
+.top_section {}
+
+.grid_box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    max-width: 100%;
+}
+
+.grid_box h1 {
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+.grid_box p {
+    margin: 1.5em auto;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.common_color {
+    background: linear-gradient(to right, #FB954B, #FD4D2F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid_box a {
+    background: linear-gradient(to right, #FB954B, #FD4D2F);
+    padding: 1em 2em;
+    border-radius: 100px;
+    color: #fff;
+}
+
+.top_section .grid_box img {
+    float: right;
+}
+
+/* ---------------------------
+        Top Section End
+---------------------------- */
